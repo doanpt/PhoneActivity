@@ -73,8 +73,9 @@ To open Activity over lock screen. you can use a high-notification with "full-sc
      Intent intent = new Intent(context, IncomingCallService.class);
      startForegroundService(intent);
  }
-You must declare activity, service and some permission in your manifest as below:
-
+ ```
+6. You must declare activity, service and some **permissions** in your manifest as below:
+```
  <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
  <application
